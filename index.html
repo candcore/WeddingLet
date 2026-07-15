@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Камиль & Айкыз — 29.07.2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Фоновая музыка -->
+  <audio
+    id="bgMusic"
+    src="Alex Warren - Ordinary (Wedding Version).mp3.mpeg"
+    loop
+    preload="auto">
+  </audio>
+
+  <button class="music" id="musicBtn" type="button" aria-label="Музыканы күйгүзүү же токтотуу">♪</button>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="save">
+      SAVE
+      <span>the</span>
+      DATE
+    </div>
+
+    <div class="hero-content reveal">
+      <div class="date">29.07.2026</div>
+
+      <div class="names">
+        Камиль
+        <span class="and">&amp;</span>
+        Айкыз
+      </div>
+    </div>
+  </section>
+
+  <!-- Приглашение -->
+  <section class="section reveal">
+    <h2 class="title">Урматтуу коноктор!</h2>
+
+    <p class="text">
+      Сиздерди жашообуздагы эң маанилүү жана кубанычтуу күн —
+      үйлөнүү тоюбузга чакырабыз.
+      Бул күндү жакындарыбыз менен бирге өткөрүү биз үчүн чоң бакыт.
+    </p>
+
+    <div class="script">Кубанычыбызга шерик болуңуздар!</div>
+  </section>
+
+  <!-- Фото 2 -->
+  <section class="photo-block reveal">
+    <div class="photo-card">
+      <img src="photo2.jpg" alt="Камиль жана Айкыз">
+      <div class="photo-caption">Сүйүү — эки жүрөктүн бир жолу</div>
+    </div>
+  </section>
+
+  <!-- Календарь -->
+  <section class="section reveal">
+    <h2 class="title">Июль</h2>
+
+    <table class="calendar" aria-label="Июль 2026">
+      <thead>
+        <tr>
+          <th>Дш</th>
+          <th>Шш</th>
+          <th>Шр</th>
+          <th>Бш</th>
+          <th>Жм</th>
+          <th>Иш</th>
+          <th>Жк</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td></td><td></td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td>
+        </tr>
+        <tr>
+          <td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td>
+        </tr>
+        <tr>
+          <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+        </tr>
+        <tr>
+          <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+        </tr>
+        <tr>
+          <td>27</td><td>28</td>
+          <td class="wedding-day"><span>29</span></td>
+          <td>30</td><td>31</td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Место проведения -->
+  <div class="card reveal">
+    <h3>Той салтанаты</h3>
+
+    <div class="info">
+      29-июль, 2026-жыл<br>
+      Саат 16:00<br>
+      Кара-Балта шаары<br>
+      «Бак-Сарай» рестораны
+    </div>
+
+    <div class="links">
+      <a
+        href="https://2gis.kg/bishkek/geo/70000001063952247/73.893094,42.830217"
+        target="_blank"
+        rel="noopener noreferrer">
+        <div class="icon map">⌖</div>
+        2GIS
+      </a>
+
+      <a
+        href="https://www.instagram.com/bak_saray?igsh=MWM0ZDl2ajIydjE3bA=="
+        target="_blank"
+        rel="noopener noreferrer">
+        <div class="icon ig">
+          <img src="instagram.png" alt="">
+        </div>
+        Instagram
+      </a>
+    </div>
+  </div>
+
+  <!-- Обратный отсчёт -->
+  <section class="countdown">
+    <h3>САЛТАНАТКА ЧЕЙИН</h3>
+
+    <div class="grid">
+      <div class="box">
+        <div class="num" id="days">00</div>
+        <span>күн</span>
+      </div>
+
+      <div class="box">
+        <div class="num" id="hours">00</div>
+        <span>саат</span>
+      </div>
+
+      <div class="box">
+        <div class="num" id="minutes">00</div>
+        <span>мүнөт</span>
+      </div>
+
+      <div class="box">
+        <div class="num" id="seconds">00</div>
+        <span>секунд</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Информация -->
+  <section class="section notice-section">
+    <div class="notice reveal">
+      <h2 class="title">Маалымат</h2>
+
+      <p class="text">
+        Келериңизди же келе албасыңызды алдын ала билдирип коюуңуздарды суранабыз.
+        Бул тууралуу той ээлери менен байланышсаңыздар болот.
+      </p>
+
+      <div class="heart-wrap" aria-hidden="true">
+        <div class="finger f1"></div>
+        <div class="finger f2"></div>
+        <div class="finger f3"></div>
+        <div class="finger f4"></div>
+        <div class="finger f5"></div>
+        <div class="finger f6"></div>
+        <div class="finger f7"></div>
+        <div class="finger f8"></div>
+        <div class="finger f9"></div>
+        <div class="finger f10"></div>
+        <div class="finger f11"></div>
+      </div>
+
+      <div class="script">Сиздерди чыдамсыздык менен күтөбүз!</div>
+    </div>
+  </section>
+
+  <!-- Фото 3 -->
+  <section class="photo-block bottom-photo reveal">
+    <div class="photo-card">
+      <img src="photo3.jpg" alt="Камиль жана Айкыз">
+    </div>
+  </section>
+
+  <!-- Той ээлери -->
+  <footer class="footer">
+    <div class="footer-title">ТОЙ ЭЭЛЕРИ</div>
+    <div class="footer-names">Акылбек менен Роза</div>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+
+    audio.volume = 0.5;
+
+    function setMusicIcon() {
+      musicBtn.textContent = audio.paused ? "♪" : "❚❚";
+    }
+
+    async function tryPlayMusic() {
+      try {
+        await audio.play();
+        setMusicIcon();
+      } catch (error) {
+        setMusicIcon();
+      }
+    }
+
+    musicBtn.addEventListener("click", async () => {
+      if (audio.paused) {
+        await tryPlayMusic();
+      } else {
+        audio.pause();
+        setMusicIcon();
+      }
+    });
+
+    document.addEventListener("click", () => {
+      if (audio.paused) {
+        tryPlayMusic();
+      }
+    }, { once: true });
+
+    function updateCountdown() {
+      const target = new Date("2026-07-29T16:00:00+06:00").getTime();
+      const now = Date.now();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+        return;
+      }
+
+      document.getElementById("days").textContent =
+        String(Math.floor(diff / 86400000)).padStart(2, "0");
+
+      document.getElementById("hours").textContent =
+        String(Math.floor((diff % 86400000) / 3600000)).padStart(2, "0");
+
+      document.getElementById("minutes").textContent =
+        String(Math.floor((diff % 3600000) / 60000)).padStart(2, "0");
+
+      document.getElementById("seconds").textContent =
+        String(Math.floor((diff % 60000) / 1000)).padStart(2, "0");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    const revealEls = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    revealEls.forEach((element) => observer.observe(element));
+
+    setTimeout(() => {
+      document.querySelector(".hero-content").classList.add("visible");
+    }, 300);
+  </script>
+
+</body>
+</html>
