@@ -1,292 +1,375 @@
 <!DOCTYPE html>
 <html lang="ky">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Камиль & Айкыз — 29.07.2026</title>
 
-  <title>Камиль & Айкыз — 29.07.2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="photo1.jpg?v=4">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',serif;background:#f4eee8;color:#2f2722;overflow-x:hidden}
+img{max-width:100%;display:block}
 
-  <link rel="stylesheet" href="style.css">
+.hero{min-height:100vh;width:100%;position:relative;display:flex;align-items:flex-end;justify-content:center;text-align:center;padding:40px 20px 90px;color:white;overflow:hidden;background:#111}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.12),rgba(0,0,0,.58)),url("photo1.jpg") center center / contain no-repeat;background-color:#111}
+.hero::after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.45);border-radius:32px;pointer-events:none}
+.save{position:absolute;top:42px;left:38px;z-index:2;text-align:left;font-size:26px;letter-spacing:.2em;line-height:1}
+.save span{display:block;font-family:'Great Vibes',cursive;font-size:36px;letter-spacing:0;margin:4px 0}
+.hero-content{position:relative;z-index:2}
+.date{font-size:22px;letter-spacing:.25em;margin-bottom:20px}
+.names{font-family:'Great Vibes',cursive;font-size:clamp(60px,9vw,105px);line-height:.9}
+.and{display:block;font-family:'Cormorant Garamond',serif;font-size:25px;margin:14px 0}
+
+.music{position:fixed;right:20px;bottom:20px;z-index:99;width:58px;height:58px;border-radius:50%;border:none;background:#2f2722;color:white;font-size:22px;box-shadow:0 14px 35px rgba(0,0,0,.25);cursor:pointer}
+
+.lang-switch{position:fixed;left:20px;bottom:20px;z-index:99;display:flex;gap:8px}
+.lang-switch button{border:none;padding:10px 14px;border-radius:20px;background:#2f2722;color:white;font-family:inherit;font-size:16px;cursor:pointer}
+.lang-switch button.active{background:#8d6653}
+
+.section{padding:75px 20px;text-align:center}
+.title{font-size:32px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:25px}
+.text{max-width:560px;margin:0 auto;font-size:23px;line-height:1.7}
+.script{font-family:'Great Vibes',cursive;font-size:42px;color:#8d6653;margin-top:28px}
+
+.photo-block{padding:15px 20px 75px}
+.photo-card{max-width:480px;margin:0 auto;border-radius:34px;overflow:hidden;background:white;box-shadow:0 24px 60px rgba(0,0,0,.18)}
+.photo-card img{width:100%;height:auto}
+.photo-caption{padding:22px;text-align:center;font-family:'Great Vibes',cursive;font-size:28px;color:#8d6653}
+
+.collage-section{padding:15px 20px 80px}
+.collage{max-width:560px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.collage img{width:100%;height:auto;object-fit:contain;filter:grayscale(1) contrast(1.08) brightness(.96);border-radius:28px;box-shadow:0 18px 45px rgba(70,45,30,.18)}
+.collage img:first-child{grid-column:1/3}
+
+.calendar{width:100%;max-width:430px;margin:0 auto;border-collapse:collapse;font-size:20px}
+.calendar th{color:#98715d;padding:11px 6px}
+.calendar td{padding:12px 6px}
+.wedding-day span{display:inline-flex;width:43px;height:43px;border-radius:50%;align-items:center;justify-content:center;background:#8d6653;color:white;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+
+.card{margin:0 auto 75px;max-width:480px;background:white;border-radius:34px;padding:36px 24px;box-shadow:0 20px 50px rgba(70,45,30,.14);text-align:center}
+.card h3{font-size:31px;margin-bottom:15px}
+.info{font-size:23px;line-height:1.7}
+.links{display:flex;justify-content:center;gap:24px;margin-top:26px}
+.links a{text-decoration:none;color:#2f2722;font-size:18px}
+.icon{width:58px;height:58px;border-radius:18px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px}
+.map{background:#29a744}
+.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);overflow:hidden}.ig img{width:32px;height:32px;object-fit:contain}
+
+.countdown{background:#2f2722;color:white;padding:60px 18px;text-align:center}
+.countdown h3{letter-spacing:.18em;margin-bottom:25px;font-weight:400}
+.grid{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.box{min-width:76px}
+.num{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:14px 10px;font-size:29px}
+.box span{display:block;margin-top:8px;color:#ddd;font-size:16px}
+
+.notice-section{background:linear-gradient(rgba(244,238,232,.92),rgba(244,238,232,.97)),url("photo3.jpg") center center / cover no-repeat}
+.notice{max-width:520px;margin:0 auto;background:rgba(255,255,255,.88);border:1px solid rgba(141,102,83,.25);border-radius:34px;padding:36px 24px;box-shadow:0 20px 50px rgba(70,45,30,.14)}
+
+.heart-wrap{width:120px;margin:20px auto 0}
+.heart-wrap img{width:100%;opacity:0;transform:scale(.94);filter:sepia(1) saturate(.9) hue-rotate(330deg) brightness(.72) contrast(1.15);animation:heartFade 3s ease forwards}
+
+@keyframes heartFade{
+  from{opacity:0;transform:scale(.94)}
+  to{opacity:.75;transform:scale(1)}
+}
+
+.footer{padding:60px 20px;text-align:center;background:#fffaf6}
+.footer-title{letter-spacing:.18em;color:#8d6653;margin-bottom:12px;font-size:17px}
+.footer-names{font-family:'Great Vibes',cursive;font-size:54px}
+
+.reveal{opacity:0;transform:translateY(35px);transition:1s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:700px){
+  .hero{min-height:100svh;padding:34px 18px 82px}
+  .hero-bg{background-size:cover;background-position:center top}
+  .hero::after{inset:14px;border-radius:26px}
+  .save{font-size:20px;left:25px;top:34px}
+  .save span{font-size:31px}
+  .date{font-size:18px}
+  .names{font-size:64px}
+  .title{font-size:25px}
+  .text{font-size:20px}
+  .script{font-size:34px}
+  .section{padding:58px 18px}
+  .photo-card,.card,.notice{border-radius:28px}
+  .calendar{font-size:17px}
+  .calendar td{padding:10px 4px}
+  .grid{gap:8px}
+  .box{min-width:66px}
+  .num{font-size:24px;padding:12px 8px}
+  .heart-wrap{width:100px}
+}
+
+@media print{
+  @page{margin:0;size:auto}
+  body{margin:0;padding:0;background:white}
+  .music,.lang-switch{display:none}
+  .hero::after{display:none}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- Фоновая музыка -->
-  <audio
-    id="bgMusic"
-    src="Alex Warren - Ordinary (Wedding Version).mp3.mpeg"
-    loop
-    preload="auto">
-  </audio>
+<audio id="bgMusic" src="Alex Warren - Ordinary (Wedding Version).mp3.mpeg" loop preload="auto"></audio>
+<button class="music" id="musicBtn">♪</button>
 
-  <button class="music" id="musicBtn" type="button" aria-label="Музыканы күйгүзүү же токтотуу">♪</button>
+<div class="lang-switch">
+  <button id="btnKy" onclick="setLang('ky')">KG</button>
+  <button id="btnRu" onclick="setLang('ru')">RU</button>
+</div>
 
-  <!-- Главный экран -->
-  <section class="hero">
-    <div class="hero-bg"></div>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="save">SAVE<span>the</span>DATE</div>
+  <div class="hero-content reveal">
+    <div class="date">29.07.2026</div>
+    <div class="names">Камиль<span class="and">&</span>Айкыз</div>
+  </div>
+</section>
 
-    <div class="save">
-      SAVE
-      <span>the</span>
-      DATE
-    </div>
+<section class="section reveal">
+  <h2 class="title lang ky">Урматтуу коноктор!</h2>
+  <h2 class="title lang ru">Дорогие гости!</h2>
 
-    <div class="hero-content reveal">
-      <div class="date">29.07.2026</div>
+  <p class="text lang ky">
+    Сиздерди жашообуздагы эң маанилүү жана кубанычтуу күн —
+    үйлөнүү тоюбузга чакырабыз.
+    Бул күндү жакындарыбыз менен бирге өткөрүү биз үчүн чоң бакыт.
+  </p>
 
-      <div class="names">
-        Камиль
-        <span class="and">&amp;</span>
-        Айкыз
-      </div>
-    </div>
-  </section>
+  <p class="text lang ru">
+    Приглашаем вас на самый важный и радостный день нашей жизни —
+    день нашей свадьбы.
+    Для нас большое счастье провести этот день вместе с близкими людьми.
+  </p>
 
-  <!-- Приглашение -->
-  <section class="section reveal">
-    <h2 class="title">Урматтуу коноктор!</h2>
+  <div class="script lang ky">Кубанычыбызга шерик болуңуздар!</div>
+  <div class="script lang ru">Разделите с нами нашу радость!</div>
+</section>
 
-    <p class="text">
-      Сиздерди жашообуздагы эң маанилүү жана кубанычтуу күн —
-      үйлөнүү тоюбузга чакырабыз.
-      Бул күндү жакындарыбыз менен бирге өткөрүү биз үчүн чоң бакыт.
+<section class="photo-block reveal">
+  <div class="photo-card">
+    <img src="photo2.jpg" alt="Камиль жана Айкыз">
+    <div class="photo-caption lang ky">Сүйүү — эки жүрөктүн бир жолу</div>
+    <div class="photo-caption lang ru">Любовь — один путь двух сердец</div>
+  </div>
+</section>
+
+<section class="collage-section reveal">
+  <div class="collage">
+    <img src="photo1.jpg" alt="">
+    <img src="photo2.jpg" alt="">
+    <img src="photo3.jpg" alt="">
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="title lang ky">Июль</h2>
+  <h2 class="title lang ru">Июль</h2>
+
+  <table class="calendar">
+    <thead>
+      <tr class="lang ky"><th>Дш</th><th>Шш</th><th>Шр</th><th>Бш</th><th>Жм</th><th>Иш</th><th>Жк</th></tr>
+      <tr class="lang ru"><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th></tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td></tr>
+      <tr><td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td></tr>
+      <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+      <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+      <tr><td>27</td><td>28</td><td class="wedding-day"><span>29</span></td><td>30</td><td>31</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="card reveal">
+  <h3 class="lang ky">Той салтанаты</h3>
+  <h3 class="lang ru">Свадебное торжество</h3>
+
+  <div class="info lang ky">29-июль, 2026-жыл<br>Саат 16:00<br>Кара-Балта шаары<br>«Бак-Сарай» рестораны</div>
+  <div class="info lang ru">29 июля 2026 года<br>В 16:00<br>город Кара-Балта<br>Ресторан «Бак-Сарай»</div>
+
+  <div class="links">
+    <a href="https://2gis.kg/bishkek/geo/70000001063952247/73.893094,42.830217" target="_blank">
+      <div class="icon map">⌖</div>2GIS
+    </a>
+    <a href="https://www.instagram.com/bak_saray?igsh=MWM0ZDl2ajIydjE3bA==" target="_blank">
+      <div class="icon ig"><img src="instagram.png" alt="Instagram"></div>Instagram
+    </a>
+  </div>
+</div>
+
+<section class="countdown">
+  <h3 class="lang ky">САЛТАНАТКА ЧЕЙИН</h3>
+  <h3 class="lang ru">ДО ТОРЖЕСТВА</h3>
+
+  <div class="grid">
+    <div class="box"><div class="num" id="days">00</div><span class="lang ky">күн</span><span class="lang ru">дней</span></div>
+    <div class="box"><div class="num" id="hours">00</div><span class="lang ky">саат</span><span class="lang ru">часов</span></div>
+    <div class="box"><div class="num" id="minutes">00</div><span class="lang ky">мүнөт</span><span class="lang ru">минут</span></div>
+    <div class="box"><div class="num" id="seconds">00</div><span class="lang ky">секунд</span><span class="lang ru">секунд</span></div>
+  </div>
+</section>
+
+<section class="section notice-section">
+  <div class="notice reveal">
+    <h2 class="title lang ky">Маалымат</h2>
+    <h2 class="title lang ru">Информация</h2>
+
+    <p class="text lang ky">
+      Келериңизди же келе албасыңызды алдын ала билдирип коюуңуздарды суранабыз.
+      Бул тууралуу той ээлери менен байланышсаңыздар болот.
     </p>
 
-    <div class="script">Кубанычыбызга шерик болуңуздар!</div>
-  </section>
+    <p class="text lang ru">
+      Просим заранее сообщить, сможете ли вы прийти.
+      По этому вопросу можно связаться с хозяевами торжества.
+    </p>
 
-  <!-- Фото 2 -->
-  <section class="photo-block reveal">
-    <div class="photo-card">
-      <img src="photo2.jpg" alt="Камиль жана Айкыз">
-      <div class="photo-caption">Сүйүү — эки жүрөктүн бир жолу</div>
-    </div>
-  </section>
-
-  <!-- Календарь -->
-  <section class="section reveal">
-    <h2 class="title">Июль</h2>
-
-    <table class="calendar" aria-label="Июль 2026">
-      <thead>
-        <tr>
-          <th>Дш</th>
-          <th>Шш</th>
-          <th>Шр</th>
-          <th>Бш</th>
-          <th>Жм</th>
-          <th>Иш</th>
-          <th>Жк</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td></td><td></td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td>
-        </tr>
-        <tr>
-          <td>06</td><td>07</td><td>08</td><td>09</td><td>10</td><td>11</td><td>12</td>
-        </tr>
-        <tr>
-          <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
-        </tr>
-        <tr>
-          <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
-        </tr>
-        <tr>
-          <td>27</td><td>28</td>
-          <td class="wedding-day"><span>29</span></td>
-          <td>30</td><td>31</td><td></td><td></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- Место проведения -->
-  <div class="card reveal">
-    <h3>Той салтанаты</h3>
-
-    <div class="info">
-      29-июль, 2026-жыл<br>
-      Саат 16:00<br>
-      Кара-Балта шаары<br>
-      «Бак-Сарай» рестораны
-    </div>
-
-    <div class="links">
-      <a
-        href="https://2gis.kg/bishkek/geo/70000001063952247/73.893094,42.830217"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="icon map">⌖</div>
-        2GIS
-      </a>
-
-      <a
-        href="https://www.instagram.com/bak_saray?igsh=MWM0ZDl2ajIydjE3bA=="
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="icon ig">
-          <img src="instagram.png" alt="">
-        </div>
-        Instagram
-      </a>
-    </div>
-  </div>
-
-  <!-- Обратный отсчёт -->
-  <section class="countdown">
-    <h3>САЛТАНАТКА ЧЕЙИН</h3>
-
-    <div class="grid">
-      <div class="box">
-        <div class="num" id="days">00</div>
-        <span>күн</span>
-      </div>
-
-      <div class="box">
-        <div class="num" id="hours">00</div>
-        <span>саат</span>
-      </div>
-
-      <div class="box">
-        <div class="num" id="minutes">00</div>
-        <span>мүнөт</span>
-      </div>
-
-      <div class="box">
-        <div class="num" id="seconds">00</div>
-        <span>секунд</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Информация -->
-  <section class="section notice-section">
-    <div class="notice reveal">
-      <h2 class="title">Маалымат</h2>
-
-      <p class="text">
-        Келериңизди же келе албасыңызды алдын ала билдирип коюуңуздарды суранабыз.
-        Бул тууралуу той ээлери менен байланышсаңыздар болот.
-      </p>
-
-      <div class="heart-wrap" aria-hidden="true">
-        <div class="finger f1"></div>
-        <div class="finger f2"></div>
-        <div class="finger f3"></div>
-        <div class="finger f4"></div>
-        <div class="finger f5"></div>
-        <div class="finger f6"></div>
-        <div class="finger f7"></div>
-        <div class="finger f8"></div>
-        <div class="finger f9"></div>
-        <div class="finger f10"></div>
-        <div class="finger f11"></div>
-      </div>
-
-      <div class="script">Сиздерди чыдамсыздык менен күтөбүз!</div>
-    </div>
-  </section>
-
-  <!-- Фото 3 -->
-  <section class="photo-block bottom-photo reveal">
-    <div class="photo-card">
+    <div class="heart-wrap">
       <img src="photo3.jpg" alt="Камиль жана Айкыз">
     </div>
-  </section>
 
-  <!-- Той ээлери -->
-  <footer class="footer">
-    <div class="footer-title">ТОЙ ЭЭЛЕРИ</div>
-    <div class="footer-names">Акылбек менен Роза</div>
-  </footer>
+    <div class="script lang ky">Сиздерди чыдамсыздык менен күтөбүз!</div>
+    <div class="script lang ru">Будем ждать вас с нетерпением!</div>
+  </div>
+</section>
 
-  <script>
-    const audio = document.getElementById("bgMusic");
-    const musicBtn = document.getElementById("musicBtn");
+<footer class="footer">
+  <div class="footer-title lang ky">ТОЙ ЭЭЛЕРИ</div>
+  <div class="footer-title lang ru">ХОЗЯЕВА ТОРЖЕСТВА</div>
 
-    audio.volume = 0.5;
+  <div class="footer-names lang ky">Акылбек менен Роза</div>
+  <div class="footer-names lang ru">Акылбек менен Роза</div>
+</footer>
 
-    function setMusicIcon() {
-      musicBtn.textContent = audio.paused ? "♪" : "❚❚";
-    }
+<script>
+const audio = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
 
-    async function tryPlayMusic() {
-      try {
-        await audio.play();
-        setMusicIcon();
-      } catch (error) {
-        setMusicIcon();
-      }
-    }
+audio.volume = 0.3;
+let userStopped = false;
 
-    musicBtn.addEventListener("click", async () => {
-      if (audio.paused) {
-        await tryPlayMusic();
-      } else {
-        audio.pause();
-        setMusicIcon();
-      }
+function playMusic(){
+  if(userStopped) return;
+
+  audio.play()
+    .then(() => {
+      musicBtn.textContent = "❚❚";
+    })
+    .catch(() => {
+      musicBtn.textContent = "♪";
     });
+}
 
-    document.addEventListener("click", () => {
-      if (audio.paused) {
-        tryPlayMusic();
-      }
-    }, { once: true });
+function stopMusic(){
+  audio.pause();
+  audio.currentTime = 0;
+  musicBtn.textContent = "♪";
+}
 
-    function updateCountdown() {
-      const target = new Date("2026-07-29T16:00:00+06:00").getTime();
-      const now = Date.now();
-      const diff = target - now;
+document.addEventListener("click", () => {
+  userStopped = false;
+  playMusic();
+}, { once:true });
 
-      if (diff <= 0) {
-        document.getElementById("days").textContent = "00";
-        document.getElementById("hours").textContent = "00";
-        document.getElementById("minutes").textContent = "00";
-        document.getElementById("seconds").textContent = "00";
-        return;
-      }
+document.addEventListener("touchstart", () => {
+  userStopped = false;
+  playMusic();
+}, { once:true });
 
-      document.getElementById("days").textContent =
-        String(Math.floor(diff / 86400000)).padStart(2, "0");
+musicBtn.addEventListener("click", function(event){
+  event.stopPropagation();
 
-      document.getElementById("hours").textContent =
-        String(Math.floor((diff % 86400000) / 3600000)).padStart(2, "0");
+  if(audio.paused){
+    userStopped = false;
+    playMusic();
+  }else{
+    userStopped = true;
+    stopMusic();
+  }
+});
 
-      document.getElementById("minutes").textContent =
-        String(Math.floor((diff % 3600000) / 60000)).padStart(2, "0");
+document.addEventListener("visibilitychange", function(){
+  if(document.hidden){
+    stopMusic();
+  }
+});
 
-      document.getElementById("seconds").textContent =
-        String(Math.floor((diff % 60000) / 1000)).padStart(2, "0");
+window.addEventListener("pagehide", stopMusic);
+window.addEventListener("beforeunload", stopMusic);
+
+function updateCountdown(){
+  const target = new Date("2026-07-29T16:00:00+06:00").getTime();
+  const now = new Date().getTime();
+  const diff = target - now;
+
+  if(diff <= 0){
+    document.getElementById("days").textContent = "00";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+    return;
+  }
+
+  document.getElementById("days").textContent = Math.floor(diff / 86400000);
+  document.getElementById("hours").textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2,"0");
+  document.getElementById("minutes").textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2,"0");
+  document.getElementById("seconds").textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2,"0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+const revealEls = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
     }
+  });
+},{
+  threshold:0.15
+});
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+revealEls.forEach(el => observer.observe(el));
 
-    const revealEls = document.querySelectorAll(".reveal");
+setTimeout(() => {
+  document.querySelector(".hero-content").classList.add("visible");
+}, 300);
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, {
-      threshold: 0.15
-    });
+function setLang(lang){
+  document.documentElement.lang = lang;
 
-    revealEls.forEach((element) => observer.observe(element));
+  document.querySelectorAll(".lang").forEach(el => {
+    el.style.display = "none";
+  });
 
-    setTimeout(() => {
-      document.querySelector(".hero-content").classList.add("visible");
-    }, 300);
-  </script>
+  document.querySelectorAll("." + lang).forEach(el => {
+    el.style.display = "";
+  });
+
+  document.getElementById("btnKy").classList.remove("active");
+  document.getElementById("btnRu").classList.remove("active");
+
+  if(lang === "ky"){
+    document.getElementById("btnKy").classList.add("active");
+  }else{
+    document.getElementById("btnRu").classList.add("active");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  setLang("ky");
+});
+</script>
 
 </body>
 </html>
